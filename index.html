@@ -23,9 +23,9 @@
 <script type="text/javascript">
 
 
-
-document.addEventListener("deviceready", onDeviceReady, false);
-
+function isDeviceReady(){
+     document.addEventListener("deviceready", onDeviceReady, false);
+}
 
 function onDeviceReady() {
      document.getElementById('myFeedbackDiv').innerHTML ='Your device is now ready to use';  
@@ -36,7 +36,7 @@ function onDeviceReady() {
 
 </head>
 
-<body>
+<body onload="isDeviceReady()">
 
 <h1>pgb-helloworld-easy-index.html </h1>
 
